@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>コーヒー缶のPortfolio</title>
+    <meta name="description" content="ようこそ！ここはコーヒー缶の個人ポートフォリオサイトです。">
+    <link rel="icon" href="images/favicon.png">
+    <!-- OGP 内部SEO -->
+    <script src="scripts/vendors/pace.js"></script>
+    <link rel="stylesheet" href="styles/loader.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/vendors/css-reset.css" />
+    <link rel="stylesheet" href="styles/vendors/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    
+    <script src="scripts/vendors/gsap.min.js" defer></script>
+
+    <script src="scripts/vendors/swiper-bundle.min.js" defer></script>
+    <script src="scripts/libs/hero-slider.js" defer></script>
+
+    <script src="scripts/vendors/scroll-polyfill.js" defer></script>
+    <script src="scripts/libs/scroll.js" defer></script>
+    
+    <script src="scripts/libs/mobile-menu.js" defer></script>
+
+    <script src="scripts/libs/text-animation.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+
+  </head>
+  <body>
+    <div id="global-container">
+      <div id="container">
+        <div class="mobile-menu__cover"></div>
+        <div class="nav-trigger"></div>
+        <header class="header">
+          <div class="header__inner appear up">
+            <div class="logo item">
+              <img class="logo__img" src="images/logo.svg" />
+              <span class="logo__stay">Portfolio</span>
+              <span class="logo__world">Site</span>
+            </div>
+            <nav class="header__nav">
+              <ul class="header__ul">
+                <li class="header__li item button" tabindex="0" data-target="aboutme.html"><a href="#">About Me!</a></li>
+                <li class="header__li item button" tabindex="0" data-target="price.html"><a href="#">料金表</a></li>
+                <li class="header__li item button" tabindex="0" data-target="form.html"><a class="btn filled" href="#">Contact Me!</a></li>
+              </ul>
+            </nav>
+            <button class="mobile-menu__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </header>
+        <div id="content">
+          <div class="hero">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="hero__title">Kawaii</div>
+                  <img src="images/image-1.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">PoP</div>
+                  <img src="images/image-2.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">Artwork</div>
+                  <img src="images/image-3.jpg" alt="" />
+                </div>
+              </div>
+              <div class="hero__footer">
+                <img class="hero__downarrow" src="images/arrow.svg" />
+                <span class="hero__scrolltext">scroll</span>
+              </div>
+            </div>
+          </div>
+          <div id="main-content">
+            <aside class="side left">
+              <div class="side__inner">
+                <button onclick="location.href='https://x.com/nayuta173591'">
+                  <a href="#" class="twitter icon tween-animate-title">Twitter</a>
+                </button>
+                <button onclick="location.href='https://www.instagram.com/ktwjp455/profilecard/?igsh=MXVzenR1bHh6czVwbA%3D%3D'">
+                <a href="#" class="fb icon tween-animate-title">Instagram</a>
+                </button>
+              </div>
+            </aside>
+            <main>
+              <section class="travel">
+                <div class="travel__inner">
+                  <div class="travel__img cover-slide">
+                    <img class="img-zoom" src="images/image-travel.jpg" />
+                  </div>
+                  <div class="travel__texts appear left">
+                    <div class="travel__texts-inner">
+                      <div class="travel__title main-title item">
+                        <span class="purple">Welcome</span>
+                        <span>my Page!</span>
+                      </div>
+                      <div class="travel__sub sub-title item">私のページへようこそ！</div>
+                      <div class="travel__description item">
+                        <p>
+                          ここはオリジナルイラスト・二次創作の<br />展示及びイラスト作成依頼のページです。
+                        </p>
+                      <div>・料金表・</div>
+                        <p>・全身イラスト：10000円〜<br/>バストアップ絵：5000円〜<br/>お気軽に「Contact Me!」からお問合せください。</p>
+                        <p>（1~2日が返信目安です。）</p>
+
+                      </div>
+                      <div class="travel__btn item">
+                        <button class="btn filled" onclick="window.location.href='price.html'">もっと詳しく（料金表へ）</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="houses">
+                <div>
+                  <h2 class="main-title tween-animate-title">
+                    Find My Work
+                  </h2>
+                  <p class="sub-title tween-animate-title">
+                    お気に入りの作品を見つけよう
+                  </p>
+                </div>
+                <div class="houses__inner">
+                  <div class="houses__item">
+                    <div class="cover-slide hover-darken">
+                      <div
+                        class="bg-img-zoom img-bg50"
+                        style="background-image: url(images/villa-1.jpg)"
+                      ></div>
+                    </div>
+                    <p class="houses__title">Work 1</p>
+                  </div>
+                  <div class="houses__item">
+                    <div class="cover-slide hover-darken">
+                      <div
+                        class="bg-img-zoom img-bg50"
+                        style="background-image: url(images/villa-2.jpg)"
+                      ></div>
+                    </div>
+                    <p class="houses__title">Work 2</p>
+                  </div>
+                  <div class="houses__item">
+                    <div class="cover-slide hover-darken">
+                      <div
+                        class="bg-img-zoom img-bg50"
+                        style="background-image: url(images/villa-3.jpg)"
+                      ></div>
+                    </div>
+                    <p class="houses__title">Work 3</p>
+                  </div>
+                  <div class="houses__item">
+                    <div class="cover-slide hover-darken">
+                      <div
+                        class="bg-img-zoom img-bg50"
+                        style="background-image: url(images/villa-4.jpg)"
+                      ></div>
+                    </div>
+                    <p class="houses__title">Work 4</p>
+                  </div>
+                  <div class="houses__item">
+                    <div class="cover-slide hover-darken">
+                      <div
+                        class="bg-img-zoom img-bg50"
+                        style="background-image: url(images/villa-5.jpg)"
+                      ></div>
+                    </div>
+                    <p class="houses__title">Work 5</p>
+                  </div>
+                  <div class="houses__item">
+                    <div class="cover-slide hover-darken">
+                      <div
+                        class="bg-img-zoom img-bg50"
+                        style="background-image: url(images/villa-6.jpg)"
+                      ></div>
+                    </div>
+                    <p class="houses__title">Work 6</p>
+                  </div>
+                  <div class="houses__btn appear up">
+                    <button class="btn slide-bg item">もっと詳しく</button>
+                  </div>
+                </div>
+              </section>
+              <section class="popular">
+                <div class="popular__header">
+                  <h2 class="main-title tween-animate-title">My Place</h2>
+                  <p class="sub-title tween-animate-title">
+                    私の好きな場所
+                  </p>
+                </div>
+                <div class="popular__inner appear up">
+                  <div class="popular__container">
+                    <div class="popular__item item">
+                      <div class="popular__img">
+                        <img src="images/image-p1.jpg" alt="" />
+                      </div>
+                      <p class="popular__title">Nara </p>
+                    </div>
+                    <div class="popular__item item">
+                      <div class="popular__img">
+                        <img src="images/image-p2.jpg" alt="" />
+                      </div>
+                      <p class="popular__title">Jakarta</p>
+                    </div>
+                    <div class="popular__item item">
+                      <div class="popular__img">
+                        <img src="images/image-p3.jpg" alt="" />
+                      </div>
+                      <p class="popular__title">Singapore</p>
+                    </div>
+                    <div class="popular__item item">
+                      <div class="popular__img">
+                        <img src="images/image-p4.jpg" alt="" />
+                      </div>
+                      <p class="popular__title">Tokyo</p>
+                    </div>
+                    <div class="popular__btn appear up">
+                      <button class="btn cover-3d item" onclick="window.location.href='aboutme.html'">
+                        <span>About Me!</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </main>
+            <aside class="side right">
+              <div class="side__inner">
+                <span class="tween-animate-title">&copy; Coffee Can</span>
+              </div>
+            </aside>
+          </div>
+        </div>
+        <div class="footer appear up">
+          <div class="logo item">
+            <img class="logo__img" src="images/logo.svg" />
+            <span class="logo__stay">Portfolio</span>
+            <span class="logo__world">Site</span>
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__ul">
+              <li class="footer__li item"><a href="#">お仕事</a></li>
+              <li class="footer__li item"><a href="#">いつでも</a></li>
+              <li class="footer__li item"><a href="#">おまちして</a></li>
+              <li class="footer__li item"><a href="#">ま〜す！</a></li>
+            </ul>
+            <div class="footer__copyright item">&copy; Coffee Can</div>
+          </nav>
+        </div>
+      </div>
+      <nav class="mobile-menu">
+        <div class="logo">
+          <img class="logo__img" src="images/logo.svg" />
+          <span class="logo__stay">Portfolio</span>
+          <span class="logo__world">Site</span>
+        </div>
+        <ul class="mobile-menu__main">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">
+              <span class="main-title">My Gallary</span>
+              <span class="sub-title">作品一覧</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">
+              <span class="main-title">About Me!</span>
+              <span class="sub-title">経歴</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">
+              <span class="main-title">Contact Me!</span>
+              <span class="sub-title">お仕事依頼など</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+  </body>
+</html>
