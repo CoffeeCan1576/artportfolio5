@@ -407,3 +407,181 @@ main {
     background-image: url(../images/facebook.svg);
   }
 }
+
+// Googleフォームのコンテナスタイル
+.form-container {
+  width: 90vw;  // 画面幅の90%
+  max-width: 800px; // 最大幅800px
+  padding: 10px; // サイドの余白
+
+  iframe {
+    width: 100%;
+    height: 70vh;  // 画面高さの70%
+    max-height: 800px; // 最大高さ
+    border: none;
+  }
+}
+/* フォームのコンテナ */
+.form-container {
+  width: 90vw;           // 画面幅の90%
+  max-width: 800px;      // 最大幅800px
+  margin-bottom: 20px;   // ボタンとの間の余白
+  iframe {
+    width: 100%;
+    height: 1800px;      // 固定高さ（レスポンシブ対応に合わせて調整可能）
+    border: none;
+  }
+}
+
+body{
+  background: linear-gradient(-45deg, #f9c2eb, #a8c2ee, #c2f9d0, #ffdea5) fixed;
+  background-size: 800% 800%;
+  animation: GradietionAnimation 9s ease infinite;
+}
+
+@keyframes GradietionAnimation { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+#sec {
+  padding: 0;
+  
+  text-align: center;
+  word-wrap: break-word;
+}
+
+#sec ul {
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style: none;
+  border: none;
+}
+#sec ul li {
+  padding: 40px;
+  width: 1000px;
+  transition: box-shadow 0.3s;
+}
+#sec ul li:hover {
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+#sec ul li:hover span {
+  color: #63B7E6;
+}
+#sec ul li:hover p {
+  color: black;
+}
+#sec ul li:hover .title01 {
+  color: #63B7E6;
+}
+#sec ul li:hover .title01:after {
+  width: 25px;
+}
+#sec ul li span {
+  font-size: 2.6em;
+  display: block;
+  transition: color 0.3s;
+  color: #A2A2A2;
+}
+#sec ul li span:before, #sec ul li span:after {
+  position: static;
+}
+#sec ul li .title01 {
+  color: black;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 100;
+  transition: color 0.3s;
+}
+#sec ul li .title01:after {
+  content: "";
+  position: relative;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: #6f6f6f;
+  transition: width 0.3s;
+}
+#sec ul li p {
+  color: #A2A2A2;
+  text-align: left;
+  text-indent: 1em;
+  font-size: 16px;
+  line-height: 26px;
+  transition: color 0.3s;
+}
+
+
+
+.price-page html, .price-page body {
+  height: 100%; /* ページの高さを100%に設定 */
+  margin: 0; /* デフォルトのマージンを削除 */
+  display: flex; /* フレックスボックスを使用 */
+  align-items: center; /* 垂直方向の中央揃え */
+  justify-content: center; /* 水平方向の中央揃え */
+  background-color: #f8f8f8; /* 背景色 */
+  font-family: 'Yu Gothic', 'Meiryo', sans-serif; /* フォント */
+}
+
+.price-page .menu-container {
+  max-width: 600px; /* 最大幅を設定 */
+  width: 100%; /* 幅を100%に設定して画面幅に合わせる */
+  background-color: #fff; /* 背景色 */
+  padding: 20px; /* パディング */
+  border-radius: 8px; /* 角を丸く */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 影 */
+  margin: 0 auto; /* 自動マージンで中央に配置 */
+}
+
+.price-page h1 {
+  text-align: center; /* 見出しを中央揃え */
+  color: #ff4081; /* 見出しの色 */
+  font-size: 2em; /* フォントサイズ */
+  margin-bottom: 20px; /* 下にマージン */
+}
+
+.price-page .menu-list {
+  list-style-type: none; /* リストマーカーをなしに */
+  padding: 0; /* パディングをなしに */
+}
+
+.price-page .menu-item {
+  display: flex; /* フレックスボックスを使用 */
+  justify-content: space-between; /* 左右に分ける */
+  padding: 15px 0; /* 上下のパディング */
+  border-bottom: 1px solid #eee; /* 下線 */
+}
+
+.price-page .item-name {
+  font-weight: bold; /* アイテム名を太字に */
+  color: #333; /* アイテム名の色 */
+}
+
+.price-page .item-price {
+  color: #ff4081; /* 価格の色 */
+}
+
+.price-page .contact-info {
+  margin-top: 20px; /* 上にマージンを追加 */
+  text-align: center; /* 中央揃え */
+}
+
+.price-page .contact-info a {
+  color: #ff4081; /* リンクの色 */
+  text-decoration: none; /* 下線をなしに */
+}
+.menu-container {
+  max-width: 600px; /* 最大幅を設定 */
+  width: 100%; /* 幅を100%に設定して画面幅に合わせる */
+  background-color: #fff; /* 背景色 */
+  padding: 20px; /* パディング */
+  border-radius: 8px; /* 角を丸く */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 影 */
+  margin-top: 50%; /* 上に余白を追加 */
+}
